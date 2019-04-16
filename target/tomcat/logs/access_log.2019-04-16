@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:21:21:02 +0800] "GET /servlet/ParkServlet?License=%E6%B9%98A8888&parkID=1&Time=2016-08-22 HTTP/1.1" 200 - http-bio-8888-exec-1 65
+0:0:0:0:0:0:0:1 - - [16/Apr/2019:21:21:02 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8888-exec-2 40

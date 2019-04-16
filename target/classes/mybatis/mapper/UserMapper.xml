@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sofia.SmartPark.mapper.UserMapper">
+
+    <insert id="insertUser">
+		INSERT INTO userInfo(info,userName, password, phoneNum,license,driveLicenseImg,engineID,money) VALUES (#{info},#{userName
+		}, #{password}, #{phoneNum},#{license},#{driveLicenseImg},#{engineID},#{money})
+	</insert>
+
+    <select id="selectUserByNameAndPwd" resultType="com.sofia.SmartPark.model.TbUser" >
+		SELECT * FROM userInfo WHERE userName = #{userName} AND password = #{password}
+	</select>
+
+	<select id="selectUserPhoneNum" resultType="String">
+		SELECT userName FROM userInfo where phoneNum = #{phoneNum}
+	</select>
+
+</mapper>
